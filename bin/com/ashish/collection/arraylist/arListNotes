@@ -1,0 +1,19 @@
+1. What does it mean when we say an ArrayList is not synchronized?
+It means that accessing an ArrayList instance from multiple threads may not be safe 
+(read, "may result in unexpected behavior" or "may not work as advertised").
+
+2. Why do we need synchronized ArrayLists when we already have Vectors? 
+Being synchronized means that every operation is thread safe - if you use the same vector from two threads at the same time, 
+they can't corrupt the state. However, this makes it slower.
+If you are working in a single threaded environment (or the list is limited to a thread and never shared), use ArrayList. 
+If you are working with multiple threads that share the same collection, either use Vector, or use ArrayList but synchronize 
+in some other way (e.g., manually or via a wrapper).
+
+3. How to Synchronize ArrayList in Java with Example ?
+http://java67.blogspot.com/2014/12/how-to-synchronize-arraylist-in-java.html#ixzz48kqHb4yK
+http://beginnersbook.com/2013/12/how-to-synchronize-arraylist-in-java-with-example/
+
+
+4. ArrayList complete Operatipns.
+http://javarevisited.blogspot.in/2011/05/example-of-arraylist-in-java-tutorial.html
+

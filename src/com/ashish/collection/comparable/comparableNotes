@@ -1,0 +1,48 @@
+Comparable interface:
+---------------------
+
+Comparable interface is used to order the objects of user-defined class.
+This interface is found in "java.lang" package and contains only one method named "compareTo(Object)".
+It provide only single sorting sequence i.e. you can sort the elements on based on single datamember only.
+For instance it may be either rollno, name, age or anything else.
+
+Syntax:
+-------
+
+public int compareTo(Object obj): is used to compare the current object with the specified object.
+We can sort the elements of:
+
+1. String objects
+2. Wrapper class objects
+3. User-defined class objects
+
+Collections class provides static methods for sorting the elements of collection.
+If collection elements are of Set type, we can use TreeSet. But We cannot sort the elements of List.
+Collections class provides methods for sorting the elements of List type elements.
+
+Method of Collections class for sorting List elements:
+------------------------------------------------------
+
+public void sort(List list): is used to sort the elements of List. List elements must be of Comparable type.
+
+Note:
+-----
+String class and Wrapper classes implements the Comparable interface.
+So if you store the objects of string or wrapper classes, it will be Comparable.
+
+Example of Sorting the elements of List that contains user-defined class objects on age basis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

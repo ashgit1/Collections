@@ -1,0 +1,73 @@
+Properties class in Java:
+-------------------------
+
+The properties object contains key and value pair both as a string. It is the subclass of Hashtable.
+It can be used to get property value based on the property key. 
+The Properties class provides methods to get data from properties file and store data into properties file. 
+Moreover, it can be used to get properties of system.
+
+Advantage of properties file:
+-----------------------------
+
+(*) Easy Maintenance: 
+If any information is changed from the properties file, you don't need to recompile the java class. 
+It is mainly used to contain variable information i.e. to be changed.
+
+Methods of Properties class:
+----------------------------
+
+The commonly used methods of Properties class are given below.
+
+------------------------------------------------------------------------------------------------------
+Method												|		Description
+------------------------------------------------------------------------------------------------------
+public void load(Reader r)							|		loads data from the Reader object.
+------------------------------------------------------------------------------------------------------
+public void load(InputStream is)					|		loads data from the InputStream object
+------------------------------------------------------------------------------------------------------
+public String getProperty(String key)				|		returns value based on the key.
+------------------------------------------------------------------------------------------------------
+public void setProperty(String key,String value)	|		sets the property in the properties object.
+------------------------------------------------------------------------------------------------------
+public void store(Writer w, String comment)			|		writers the properties in the writer object.
+------------------------------------------------------------------------------------------------------
+public void store(OutputStream os, String comment)  |		writes the properties in the OutputStream object. 
+------------------------------------------------------------------------------------------------------
+
+Example of Properties class to get information from properties file:
+--------------------------------------------------------------------
+
+To get information from the properties file, create the properties file first.
+
+db.properties:
+--------------
+
+user=system  
+password=oracle  
+
+Now, lets create the java class to read the data from the properties file.
+Now if you change the value of the properties file, you don't need to compile the java class again. 
+That means no maintenance problem.
+
+ex: Test.java
+
+
+Example of Properties class to get all the system properties:
+-------------------------------------------------------------
+
+By System.getProperties() method we can get all the properties of system. 
+Let's create the class that gets information from the system properties.
+
+ex: SystemProperties.java
+
+
+Example of Properties class to create properties file:
+------------------------------------------------------
+
+Now lets write the code to create the properties file.
+
+CreateProperties.java
+
+
+
+
